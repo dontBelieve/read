@@ -25,4 +25,8 @@
 		<!-- property name="age" value="11" -->
 	</bean>
 
+	<bean id="helloWorld" class="org.com.tutorialspoint.HelloWorld">
+		<property name="message" value="Hello World!" />
+	</bean>
+
 </beans>
