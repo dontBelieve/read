@@ -4,10 +4,17 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
 <mapper namespace="UserMapper">
-   <!-- statement，内容：sql语句。id：唯一标识，随便写，在同一个命名空间下保持唯一
-      resultType：sql语句查询结果集的封装类型,tb_user即为数据库中的表
-    -->
-   <select id="selectUser" resultType="org.dpl.pojo.User">
-      select * from user where id = #{id}
-   </select>
+	<!-- statement，内容：sql语句。id：唯一标识，随便写，在同一个命名空间下保持唯一 resultType：sql语句查询结果集的封装类型,tb_user即为数据库中的表 -->
+	<select id="selectUser" resultType="org.dpl.pojo.User">
+		select * from user where id =
+		#{id}
+	</select>
+	<insert id="addUser" parameterType="org.dpl.pojo.User">
+		INSERT INTO `user`(username,
+		mobile)
+		 VALUES (#{username}, #{mobile});
+	</insert>
+	<insert id="addUser2">
+		INSERT INTO `user`(username, mobile) VALUES ('张三', '18868813870')
+	</insert>
 </mapper>

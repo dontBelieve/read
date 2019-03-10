@@ -1,8 +1,10 @@
 package org.dpl.pojo;
 
+import org.springframework.stereotype.Service;
+
 public class User {
 	private String id;
-	private String userName;
+	private String username;
 	private String mobile;
 
 	public String getId() {
@@ -14,11 +16,11 @@ public class User {
 	}
 
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.username = userName;
 	}
 
 	public String getMobile() {
@@ -31,6 +33,6 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User{" + "id='" + id + '\'' + ", userName='" + userName + '\'' + ", mobile='" + mobile + '\'' + '}';
+		return "User{" + "id='" + id + '\'' + ", userName='" + username + '\'' + ", mobile='" + mobile + '\'' + '}';
 	}
 }

@@ -7,8 +7,8 @@ import org.dpl.base.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
-@RequestMapping("/userc")
+//@Controller
+//@RequestMapping("/userc")
 public class UserController extends BaseController {
 	static Logger log = Logger.getLogger(UserController.class.getName());
 	
